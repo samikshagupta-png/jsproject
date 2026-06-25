@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #9dd1f1, #c8e0f4);
+  color: #031927;
+}
+
+header {
+  background-color: #031927;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.hero{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.worklist input{
+    min-height: 50px;
+    width: 50vw;
+    padding: 0 1rem;
+    outline: none;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.worklist input:focus {
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+#task:hover{
+    border: 4px solid rgb(80, 76, 76);
+    min-height: 55px;
+}
+.worklist{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    
+
+}
+.onetask{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.Text{
+    color: gray;
+    font-weight: bold;
+    border: none;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    width:30vw;
+    height: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #88bad8;
+    cursor: pointer;
+}
+.Text:hover{
+    color: white;
+    border: 1px solid white;
+}
+.done{
+    height: 5.1vh;
+    background-color: rgb(85, 190, 85);
+}
+.recenttask ul li {
+  margin-bottom: 15px;   /* adds gap between tasks */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+/* General button styling */
+button {
+  transition: all 0.3s ease; /* smooth animation */
+  cursor: pointer;
+}
+
+/* Login/Logout button hover */
+.btn:hover {
+  background-color: #ffffff;
+  color: #031927;
+  border: 1px solid #031927;
+}
+
+/* Create button hover */
+.worklist button:hover {
+  background-color: #ff4d4d; /* brighter red */
+  color: white;
+  transform: translateY(-2px); /* lift effect */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Complete button hover */
+.done:hover {
+  background-color: #4CAF50; /* deeper green */
+  color: white;
+  transform: scale(1.1); /* pop effect */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+.recenttask ul li:hover {
+  transform: translateY(-3px);
+}

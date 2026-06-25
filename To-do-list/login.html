@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginpage</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <div class="hero">
+        
+       <div class="loginbox">
+            <div>
+                <br>
+                <h1 style="display: flex;justify-content: center;">welcome !</h1>
+                
+                <form id="loginform" style="display: flex;flex-direction: column;flex-wrap: wrap;">
+                    
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required><br>
+                    <button id="btn" style="background-color: rgb(151, 187, 151); width: 400px;border-radius: 20px; height: 50px; cursor: pointer;"><b>continue</b></button>
+                </form>
+
+                
+                
+            </div>
+         <br>
+        
+        
+        
+        <p style="display: flex;justify-content: center;"><small>This site is protected by reCAPTCHA and the Privacy <br>Policy and Terms of Service apply.</small></p>
+
+       </div>
+     
+
+        
+
+    </div>
+<script>
+  const form = document.getElementById("loginform");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault(); // stop default reload
+    const username = document.getElementById("username").value;
+
+    // Save username in localStorage
+    localStorage.setItem("username", username);
+
+    // Redirect to index page
+    window.location.href = "index.html";
+  });
+</script>
+    
+    
+</body>
+</html>
