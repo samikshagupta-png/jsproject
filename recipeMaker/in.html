@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recipeMAKer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin: 0;
+            
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: #E0E0E0;
+            font-family:'poppins', Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            overflow-wrap: break-word;
+            box-sizing: border-box;
+        }
+        nav{
+            padding: 1rem;
+            background-color:#30343f;
+            color: white;
+            position: sticky;
+            height: 7vh;
+            text-align: center;
+        }
+        
+        .hero{
+            display: flex;
+            margin: 20px;
+            gap: 10px;
+            height:auto;
+            width: 100%;
+
+        }
+        .content{
+            font-family: helvetica,Roboto;
+            height: auto;
+            width: 60%;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            
+            
+        }
+        .image{
+            height: 50vh;
+            width: 40%;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .list{
+            height: auto;
+            width : 100%;
+            font-weight: 400;
+            margin: 20px;
+            overflow-x: hidden;
+            word-wrap:break-word ;
+            white-space: normal;
+            
+            overflow-wrap: break-word;
+            box-sizing: border-box;
+
+
+           
+        }
+        .image img{
+            height: 100%;
+            width: 95%;
+            object-fit: cover;
+            border-radius: 1.5rem;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+       <nav>
+            <h1 id="dishname">⏳ Cooking magic… please wait!</h1>
+       </nav>
+       <div class="hero">
+            <div class="content">
+                <span><h2><u>ingredient</u></h2></span>
+                <ul id="ingredient"></ul>
+                
+            </div>
+            <div class="image">
+
+
+            </div>
+
+       </div>
+       <br>
+       <div class="list">
+        <h1>...</h1>
+       </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -33,10 +33,10 @@ mode.addEventListener("change", function() {
   const selectedmode = this.value;
 
   if (selectedmode === "light") {
-    document.body.style.backgroundColor = "#9dd1f1";
+    document.body.style.background = "linear-gradient(135deg, #9dd1f1, #c8e0f4)";
     document.body.style.color = "black";
   } else if (selectedmode === "dark") {
-    document.body.style.backgroundColor = "#272626";
+    document.body.style.background = "linear-gradient(135deg, #252526, #4e4e4f)"
     document.body.style.color = "white";
   }
 });

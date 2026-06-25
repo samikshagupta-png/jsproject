@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E0E0E0;
+    width: 100%;
+}
+nav{
+    background-color:#30343f;
+    color: white;
+    position: sticky;
+    
+}
+.searchbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#searchrecipe{
+    height: 2.5rem;
+    width: 45%;
+    background-color: #f7fbfc;
+}
+#searchrecipe:hover{
+    border: 3px solid black;
+    background-color: rgb(233, 249, 249);
+}
+#searchBtn{
+    background-color: rgb(116, 123, 123);
+}
+#searchBtn:hover {
+    background-color: rgb(133, 145, 145);
+    color: white;
+    cursor: pointer;
+}
+#carousel {
+  text-align: center;
+  margin: 2rem auto;
+}
+#carousel img {
+  height: 500px;
+  width: 69%;
+  max-width: 900px; 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: opacity 0.5s ease-in-out;
+}
+.row1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:2rem;
+    margin: 0 auto;
+    width: 80%;
+
+}
+.row2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:2rem;
+    margin: 0 auto;
+    width: 80%;
+    
+
+}
+
+
+.contentbox {
+  aspect-ratio: 4 / 3; 
+  border: 2px solid #1b2021;
+  border-radius: 1.5rem;
+  background-color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  cursor: pointer;
+  
+ 
+}
+.dish img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.dish{
+    height: 80%;
+    width: 100%;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;   
+}
+.contentbox:hover{
+    border-radius: 4px solid #EA638C;
+    background-color: lightblue;
+}
+#quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.last{
+    width: 100%;
+    height: 200px;  
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.itemsvar{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 10px;
+}
+.items{
+    height: 150px;
+    width: 170px;
+    border-radius: 50%;
+    background-color: aqua;
+    overflow: hidden;
+}
+.items img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.items:hover {
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+}
+.foot{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position:sticky;
+    
+}
