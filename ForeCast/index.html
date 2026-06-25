@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForeCast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <main>
+        <nav class="navbar">
+            <h1>weather forecast</h1>
+            <span style="display: flex; flex-wrap: wrap;">
+                <input type="text" id="usercity" name="usercity" placeholder="enter a city to see forecast">
+                <button value="submit" id="search">search</button>
+            </span>
+
+        </nav>
+        <br>
+        <div class="hero">
+            <div class="weatherbox">
+                <div class="firstchannel">
+                    <span style="display: flex; justify-content: space-between;margin:5px">
+                        <span style="display:flex; margin-left: 7px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z"/></svg><p id="cityName"></p></span>
+                        <p id="forecastTime">time</p>
+                    </span>
+                    <br>
+                    <h1 id="temperature">🌤</h1>
+                </div>
+                
+                <br>
+                <div class="secondchannel">
+                    
+                    <div class="box1" id="wind">
+                        
+                        <p id ="para"><b>wind</b></p>
+                        <p id="para"><small>today's wind speed</small></p><br>
+                        <p id="windp"></p>
+                       
+                        
+                    </div>
+                    <div class="box2" id="rainchase">
+                       <p id ="para"><b>Rainchase</b></p>
+                        <p id="para"><small>today rain chance</small></p><br>
+                        <p id="rainchasep"></p>
+                    </div>
+
+                </div>
+                <br>
+                
+                <br>
+                <div class="thirdchannel">
+                    <div class="box1" id="pressure">
+                        <p id ="para"><b>pressure</b></p>
+                        <p id="para"><small>Today's wind pressure</small></p><br>
+                        <p id="pressurep"></p>
+                    </div>
+                    <div class="box2" id="uvindex">
+                        <p id ="para"><b>UV</b></p>
+                        <p id="para"><small>Today's uv index</small></p><br>
+                        <p id ="uvindexp"></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+
+
+    <script src="app.js"></script>
+</body>
+</html>

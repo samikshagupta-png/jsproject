@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    background: linear-gradient(to bottom, #87CEEB, #f5f7fa);
+    color: #333;
+    width: 100vw;
+    height: 100vh;
+    transition: background 1s ease;
+
+
+}
+h1, h2, .temperature {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#usercity{
+    height: 40px;
+    width:250px;
+}
+#search{
+    height: 42px;
+    width: 50px;
+    background-color: #c7dbe6;
+    border: 1px solid white;
+}
+.hero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.weatherbox{
+    width: 60%;
+    height: 75vh;
+    background-color: #ECF2F6;
+    border: 2px solid white;
+    border-radius: 1.5rem;
+}
+svg path{
+    fill:#c7dbe6;
+}
+.firstchannel{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#temperature{
+    font-size:82px;
+    color:#B5BEC6;
+    display: flex;
+    justify-content: center;
+
+}
+.firstchannel svg{
+    height: 25px;
+    
+}
+.secondchannel{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.box1{
+    height:120px;
+    width: 180px;
+    border-radius: 1.5rem;
+    border: 1px solid #B5BEC6;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+.box2{
+    height:120px;
+    width: 180px;
+    border-radius: 1.5rem;
+    border: 1px solid #B5BEC6;
+    display: flex; 
+    flex-direction: column;
+}
+.thirdchannel{
+    display: flex;
+    justify-content: space-around;
+}
+#para{
+    margin-left: 9px;
+}
+#windp,#rainchasep,#pressurep,#uvindexp{
+    
+    display: flex;
+    justify-content:space-around;
+}
