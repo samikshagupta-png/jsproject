@@ -25,6 +25,28 @@
             margin-left: 0.5rem;
 
         }
+        .projectbox{
+            display: flex;
+            flex-direction: column;
+            gap:10px;
+            
+        }
+        .project{
+            height: 5vh;
+            width: 20%;
+            border-radius: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aliceblue;
+            cursor: pointer;
+        }
+        .project:hover{
+            height: 6vh;
+            width: 21%;
+            transition: 0.4s ease-in-out;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
@@ -34,16 +56,30 @@
     </nav>
     <hr><br>
     <main>
-     <a href="currencyconverter/index.html">currencyconverter</a>   
-    <br>
-    <a href="ForeCast/index.html"> weather ForeCast</a>
-    <br>
-    <a href="game-1/index.html">games</a>
-    <br>
-    <a href="To-do-list/index.html">To-do-list </a>
-    <br>
-    <a href="recipeMaker/index.html">recipeMaker</a>
-    <small>...........</small>
+    <div class="projectbox">
+        <div class="project">
+            
+            <a href="currencyconverter/index.html">currencyconverter</a>   
+            <br>
+        </div>
+        <div class="project">
+            <a href="ForeCast/index.html"> weather ForeCast</a>
+            <br>
+        </div>
+        <div class="project">
+            <a href="game-1/index.html">games</a>
+            <br>
+        </div>
+        <div class="project">
+            <a href="To-do-list/index.html">To-do-list </a>
+            <br>
+        </div>
+        <div class="project">
+            <a href="recipeMaker/index.html">recipeMaker </a>
+            <br>
+        </div>
+    </div>
+    
     <main>
     
 </body>
