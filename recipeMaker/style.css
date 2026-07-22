@@ -189,4 +189,7 @@ nav{
     margin: 0 auto;
     width: 100%;
   }
+  .contentbox{
+    height: 30vh;
+  }
 }
